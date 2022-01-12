@@ -195,7 +195,7 @@ top players
 
 @media only screen and (max-width: 688px) {
   .container {
-    width: 100%;
+    width: 70%;
   }
   .logo {
     position: relative;
@@ -217,9 +217,9 @@ top players
   }
   .course {
     margin-bottom: 20px;
-    margin-left: 70px;
   }
-  .player {
+  .player,
+  .blog {
     flex-direction: column;
   }
 }
@@ -228,7 +228,7 @@ top players
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
   .container {
-    width: 100%;
+    width: 70%;
   }
   .logo {
     position: relative;
