@@ -1,0 +1,162 @@
+/* ------------------
+fonts
+---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* ---------------------------
+common styles or utilities 
+-----------------------------*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: white;
+  width: 870px;
+  padding: 35px;
+  margin-top: 21px;
+  border-radius: 5px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 27px;
+}
+
+/* --------------------
+top players
+-------------------- */
+
+.top-players {
+  margin-bottom: 30px;
+}
+.section-title {
+  color: #562eff;
+  font-size: 24px;
+  margin-top: 3px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+/* --------------------
+ top blogs styles
+ -------------------- */
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+.blog .thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.blog-info {
+  position: relative;
+  bottom: 16px;
+  margin-left: 16px;
+}
+.blog-title {
+  font-size: 20px;
+}
+.blog-author {
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.blog-author a {
+  text-decoration: none;
+  color: #562eff;
+}
+
+/* ----------------------
+    Latest Courses
+    ---------------------- */
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  margin-bottom: 27px;
+}
+.course {
+  width: 252.42px;
+  height: 270.79px;
+  margin-left: 9px;
+}
+.course-detail {
+  padding: 14px;
+}
+.course .course-banner img {
+  width: 224px;
+  height: 104px;
+  padding: 14px;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.fa-star {
+  color: #ffc014;
+  font-size: 12px;
+}
+
+/* ------------------
+  Media Queries
+---------------------*/
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .course {
+    margin-left: 70px;
+  }
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
