@@ -103,9 +103,11 @@ top players
   margin-bottom: 27px;
 }
 .course {
-  width: 252.42px;
-  height: 270.79px;
+  width: 253px;
+  height: 320px;
   margin-left: 9px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 11px rgb(71, 67, 67);
 }
 .course-detail {
   padding: 14px;
