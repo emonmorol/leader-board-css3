@@ -10,23 +10,74 @@ common styles or utilities
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f3f1ff;
+  background-color: #d9dbfa;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 75px;
 }
 .container {
   background-color: white;
   width: 870px;
   padding: 35px;
   margin-top: 21px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 27px;
+}
+
+/*-------------------
+     Navigation Bar
+--------------------*/
+
+.navigation {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  background: rgb(111, 1, 255);
+}
+.navigation .logo img {
+  width: 40.42px;
+  height: 51px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-name,
+.logo {
+  display: flex;
+}
+.logo {
+  position: absolute;
+  left: 210px;
+  top: 12px;
+  font-size: 24px;
+}
+.navigation-name {
+  position: absolute;
+  right: 205px;
+  top: 2.5px;
+  font-size: 16px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+.anchors {
+  margin-top: 23px;
+}
+.navigation-name img {
+  width: 51px;
+  height: 51px;
 }
 
 /* --------------------
@@ -100,14 +151,13 @@ top players
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
-  margin-bottom: 27px;
 }
 .course {
   width: 253px;
-  height: 320px;
+  height: 335px;
   margin-left: 9px;
   border-radius: 10px;
-  box-shadow: 2px 4px 11px rgb(71, 67, 67);
+  box-shadow: 2px 4px 11px rgb(154, 163, 172);
 }
 .course-detail {
   padding: 14px;
@@ -127,7 +177,16 @@ top players
   color: #ffc014;
   font-size: 12px;
 }
-
+.course-duration {
+  background-color: rgba(255, 127, 80, 0.623);
+  width: 90px;
+  padding: 5px 5px 4px 10px;
+  border-radius: 45px;
+}
+.course-time {
+  position: relative;
+  left: 5px;
+}
 /* ------------------
   Media Queries
 ---------------------*/
@@ -138,16 +197,30 @@ top players
   .container {
     width: 100%;
   }
+  .logo {
+    position: relative;
+    left: 10px;
+    top: 12px;
+    font-size: 19px;
+  }
+  .navigation-name {
+    position: relative;
+    right: 1px;
+    top: 7px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
   .players,
   .blogs,
   .courses {
     grid-template-columns: repeat(1, 1fr);
   }
+  .course {
+    margin-bottom: 20px;
+    margin-left: 70px;
+  }
   .player {
     flex-direction: column;
-  }
-  .course {
-    margin-left: 70px;
   }
 }
 
@@ -157,8 +230,22 @@ top players
   .container {
     width: 100%;
   }
+  .logo {
+    position: relative;
+    left: 10px;
+    top: 12px;
+    font-size: 19px;
+  }
+  .navigation-name {
+    position: relative;
+    right: 1px;
+    top: 7px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
   .players,
-  .courses {
+  .courses,
+  .blogs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
