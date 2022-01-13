@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 2px 10px rgb(141, 152, 160);
+  z-index: 99;
 }
 .top-anchor {
   text-decoration: none;
