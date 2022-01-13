@@ -11,19 +11,18 @@ common styles or utilities
 body {
   font-family: "Poppins", sans-serif;
   background-color: #d9dbfa;
+  margin: 0px;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: 75px;
 }
 .container {
   background-color: white;
   width: 870px;
   padding: 35px;
-  margin-top: 21px;
+  margin-top: 20px;
   border-radius: 10px;
 }
 hr {
@@ -36,9 +35,6 @@ hr {
 --------------------*/
 
 .navigation {
-  position: absolute;
-  top: 0px;
-  left: 0px;
   right: 0px;
   height: 80px;
   background: rgb(111, 1, 255);
@@ -195,7 +191,7 @@ top players
 
 @media only screen and (max-width: 688px) {
   .container {
-    width: 70%;
+    width: 80%;
   }
   .logo {
     position: relative;
@@ -248,4 +244,17 @@ top players
   .blogs {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+footer {
+  background-color: #562eff;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+.footer {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 18px;
 }
